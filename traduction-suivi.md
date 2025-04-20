@@ -21,21 +21,21 @@ Ce document permet de suivre l'état de la traduction des fichiers du projet BMA
 
 | Fichier | État | Responsable | Date de début | Date de fin | Commentaires |
 |---------|------|-------------|---------------|-------------|--------------|
-| README.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction complète disponible dans le dossier traductions |
-| CONTRIBUTING.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction complète disponible dans le dossier traductions |
-| LICENSE | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction à titre informatif disponible dans le dossier traductions (la licence originale en anglais reste la référence légale) |
+| README.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction complète |
+| CONTRIBUTING.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction complète |
+| LICENSE | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction à titre informatif (la licence originale en anglais reste la référence légale) |
 
 ### Dossier `/ai/stories`
 
 | Fichier | État | Responsable | Date de début | Date de fin | Commentaires |
 |---------|------|-------------|---------------|-------------|--------------|
-| readme.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Fichier original vide - contenu suggestif créé en français dans le dossier traductions |
+| readme.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Fichier original vide - contenu suggestif créé en français |
 
 ### Dossier `/ai/templates`
 
 | Fichier | État | Responsable | Date de début | Date de fin | Commentaires |
 |---------|------|-------------|---------------|-------------|--------------|
-| architecture-template.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction complète disponible dans le dossier traductions |
+| architecture-template.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction complète |
 | prd-template.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction complète disponible dans le dossier traductions |
 | story-template.md | ✅ Terminé | Claude | 2025-04-20 | 2025-04-20 | Traduction complète disponible dans le dossier traductions |
 
@@ -167,4 +167,10 @@ Cette section permet de suivre les mises à jour importantes faites au fichier o
 
 | Date | Fichier | Description de la mise à jour | État d'intégration |
 |------|---------|-------------------------------|---------------------|
-| | | | |
+| 2025-04-20 | traduction-suivi.md | Création initiale du fichier de suivi de traduction | Complétée |
+| 2025-04-20 | Tous les fichiers | Traduction initiale de tous les fichiers du projet | Complétée |
+| 2025-04-20 | traduction-suivi.md | Suppression des références au dossier temporaire "traductions" | Complétée |
+| 2025-04-20 | traduction-suivi.md | Ajout d'un glossaire de terminologie | Complétée |
+| 2025-04-20 | traduction-suivi.md | Ajout de la section d'état de validation des traductions | Complétée |
+
+
