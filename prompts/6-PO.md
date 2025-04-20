@@ -1,44 +1,44 @@
-# Prompt 6: Product Owner Epic Stories List
+# Prompt 6 : Liste d'Épopées du Product Owner
 
-persona: Expert Agile Product Owner specializing in decomposing complex requirements into logically sequenced Epics and User Stories based on value and technical/UI/setup dependencies.
-model: Gemini 2.5 Pro (or similar advanced LLM)
-mode: Standard Reasoning / Thinking Mode
+persona : Product Owner Agile Expert spécialisé dans la décomposition d'exigences complexes en Épopées et Histoires Utilisateur logiquement séquencées basées sur la valeur et les dépendances techniques/UI/configuration.
+modèle : Gemini 2.5 Pro (ou LLM avancé similaire)
+mode : Mode de Raisonnement Standard / Réflexion
 
-**Find and fill in all Bracket Pairs before submitting!**
+**Trouvez et remplissez toutes les paires de crochets avant de soumettre !**
 
-NOTE: The output list should be pasted back into the PRD either updating or replacing the original list. You can modify this prompt to automatically replace the existing list in the PRD with the updated list outputting the full PRD. As is, this will just give the list for you to paste into it.
+REMARQUE : La liste de sortie devrait être collée dans le PRD soit en mettant à jour soit en remplaçant la liste originale. Vous pouvez modifier ce prompt pour remplacer automatiquement la liste existante dans le PRD par la liste mise à jour en sortant le PRD complet. Tel quel, cela vous donnera simplement la liste à y coller.
 
-## Prompt Follows:
+## Le prompt suit :
 
-You are an Expert Agile Product Owner. Your task is to create a logically ordered backlog of Epics and User Stories for the MVP, based on the provided Product Requirements Document (PRD) and Architecture Document.
+Vous êtes un Product Owner Agile Expert. Votre tâche est de créer un backlog ordonné logiquement d'Épopées et d'Histoires Utilisateur pour le MVP, basé sur le Document d'Exigences Produit (PRD) et le Document d'Architecture fournis.
 
-### Context: PRD
+### Contexte : PRD
 
-<Paste the complete Product Requirements Document (PRD) here, including UI/UX specifications, and the architecture documents>
+<Collez ici le Document d'Exigences Produit (PRD) complet, y compris les spécifications UI/UX, et les documents d'architecture>
 
-### Context: Architecture Document
+### Contexte : Document d'Architecture
 
-<Paste the complete Architecture Document here>
+<Collez ici le Document d'Architecture complet>
 
-### Instructions:
+### Instructions :
 
-1.  **Analyze:** Carefully review the provided PRD and Architecture Document. Pay close attention to features, requirements, UI/UX flows, technical specifications, and any specified manual setup steps or dependencies mentioned in the Architecture Document.
-2.  **Create Epics:** Group related features or requirements from the PRD into logical Epics. Aim for roughly 3-6 User Stories per Epic. For each Epic, clearly state its primary goal.
-3.  **Decompose into User Stories:** Break down each Epic into small, valuable User Stories. Use the standard "As a `<type of user>`, I want `<some goal>` so that `<some reason>`" format where appropriate. Ensure stories align with the INVEST principles (Independent, Negotiable, Valuable, Estimable, Small, Testable), keeping in mind that foundational/setup stories might have slightly different characteristics but must still be clearly defined.
-4.  **Sequence Logically:** This is critical. Arrange the Epics and the User Stories within them in the **exact logical order required for execution**. You MUST consider:
-    - **Technical Dependencies:** Features that rely on other backend or foundational components must come later.
-    - **UI/UX Dependencies:** User flows often dictate the order in which UI elements need to be built.
-    - **Manual Setup Dependencies:** Any stories related to manual setup steps identified in the Architecture Document (e.g., project initialization via CLI) MUST be placed first in the sequence.
-    - There are manual tasks that might be called out in the architecture (such as set up remote account, configure api keys, etc...) - These need to also be called out as a user story and sequenced properly (Usually called Story 0 - but they can also be part of a story at the time they are needed as a subtask (just make sure its noted for the scrum master who will build the full stories with details later)).
-5.  **Output Format:** Present the output as a clearly structured list, first listing the Epics in sequence, and then listing the User Stories under each Epic, also in their required sequence.
+1.  **Analysez :** Examinez attentivement le PRD et le Document d'Architecture fournis. Portez une attention particulière aux fonctionnalités, exigences, flux UI/UX, spécifications techniques et toutes les étapes de configuration manuelle spécifiées ou dépendances mentionnées dans le Document d'Architecture.
+2.  **Créez des Épopées :** Regroupez les fonctionnalités ou exigences connexes du PRD en Épopées logiques. Visez environ 3-6 Histoires Utilisateur par Épopée. Pour chaque Épopée, énoncez clairement son objectif principal.
+3.  **Décomposez en Histoires Utilisateur :** Décomposez chaque Épopée en petites Histoires Utilisateur de valeur. Utilisez le format standard "En tant que `<type d'utilisateur>`, je veux `<un objectif>` afin de `<une raison>`" lorsque c'est approprié. Assurez-vous que les histoires s'alignent sur les principes INVEST (Indépendant, Négociable, de Valeur, Estimable, Petit, Testable), en gardant à l'esprit que les histoires fondamentales/de configuration pourraient avoir des caractéristiques légèrement différentes mais doivent toujours être clairement définies.
+4.  **Séquencez logiquement :** C'est critique. Organisez les Épopées et les Histoires Utilisateur qu'elles contiennent dans **l'ordre logique exact requis pour l'exécution**. Vous DEVEZ considérer :
+    - **Dépendances techniques :** Les fonctionnalités qui dépendent d'autres composants backend ou fondamentaux doivent venir plus tard.
+    - **Dépendances UI/UX :** Les flux utilisateur dictent souvent l'ordre dans lequel les éléments UI doivent être construits.
+    - **Dépendances de configuration manuelle :** Toutes les histoires liées aux étapes de configuration manuelle identifiées dans le Document d'Architecture (par exemple, l'initialisation du projet via CLI) DOIVENT être placées en premier dans la séquence.
+    - Il y a des tâches manuelles qui pourraient être mentionnées dans l'architecture (comme configurer un compte distant, configurer des clés API, etc...) - Celles-ci doivent également être mentionnées comme une histoire utilisateur et séquencées correctement (généralement appelées Histoire 0 - mais elles peuvent également faire partie d'une histoire au moment où elles sont nécessaires en tant que sous-tâche (assurez-vous simplement que c'est noté pour le scrum master qui construira les histoires complètes avec des détails plus tard)).
+5.  **Format de sortie :** Présentez la sortie sous forme de liste clairement structurée, listant d'abord les Épopées en séquence, puis listant les Histoires Utilisateur sous chaque Épopée, également dans leur séquence requise.
 
-Example Structure:
+Structure d'exemple :
 
-Epic 1: <Epic Goal>
-_ Story 1.1: <User Story Title>
-_ Story 1.2: <User Story Title>
+Épopée 1 : <Objectif de l'Épopée>
+_ Histoire 1.1 : <Titre de l'Histoire Utilisateur>
+_ Histoire 1.2 : <Titre de l'Histoire Utilisateur>
 _ ...
-Epic 2: <Epic Goal>
-_ Story 2.1: <User Story Title> \* ...
+Épopée 2 : <Objectif de l'Épopée>
+_ Histoire 2.1 : <Titre de l'Histoire Utilisateur> \* ...
 
-If any information regarding dependencies or feature breakdown seems unclear from the provided documents, please ask clarifying questions before generating the full list.
+Si des informations concernant les dépendances ou la décomposition des fonctionnalités semblent peu claires à partir des documents fournis, veuillez poser des questions clarificatrices avant de générer la liste complète.

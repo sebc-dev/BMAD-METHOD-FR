@@ -1,118 +1,118 @@
-# {Project Name} PRD
+# {Nom du Projet} PRD
 
-## Status: { Draft | Approved }
+## Statut : { Brouillon | Approuvé }
 
-## Intro
+## Introduction
 
-{ Short 1-2 paragraph describing the what and why of what the prd will achieve, as outlined in the project brief or through user questioning }
+{ Court paragraphe de 1-2 phrases décrivant le quoi et le pourquoi de ce que le PRD va réaliser, comme indiqué dans le brief du projet ou à travers les questions des utilisateurs }
 
-## Goals and Context
-
-{
-A short summarization of the project brief, with highlights on:
-
-- Clear project objectives
-- Measurable outcomes
-- Success criteria
-- Key performance indicators (KPIs)
-  }
-
-## Features and Requirements
+## Objectifs et Contexte
 
 {
+Une courte synthèse du brief du projet, avec des points sur :
 
-- Functional requirements
-- Non-functional requirements
-- User experience requirements
-- Integration requirements
-- Testing requirements
+- Objectifs clairs du projet
+- Résultats mesurables
+- Critères de succès
+- Indicateurs clés de performance (KPI)
   }
 
-## Epic Story List
+## Fonctionnalités et Exigences
 
-{ We will test fully before each story is complete, so there will be no dedicated Epic and stories at the end for testing }
+{
 
-### Epic 0: Initial Manual Set Up or Provisioning
+- Exigences fonctionnelles
+- Exigences non fonctionnelles
+- Exigences d'expérience utilisateur
+- Exigences d'intégration
+- Exigences de test
+  }
 
-- stories or tasks the user might need to perform, such as register or set up an account or provide api keys, manually configure some local resources like an LLM, etc...
+## Liste des Épopées
 
-### Epic-1: Current PRD Epic (for example backend epic)
+{ Nous testerons complètement avant que chaque histoire soit terminée, il n'y aura donc pas d'épopée dédiée et d'histoires à la fin pour les tests }
 
-#### Story 1: Title
+### Épopée 0 : Configuration manuelle initiale ou provisionnement
 
-Requirements:
+- histoires ou tâches que l'utilisateur pourrait avoir besoin d'effectuer, comme s'inscrire ou configurer un compte ou fournir des clés API, configurer manuellement certaines ressources locales comme un LLM, etc...
 
-- Do X
-- Create Y
+### Épopée-1 : Épopée PRD actuelle (par exemple, épopée backend)
+
+#### Histoire 1 : Titre
+
+Exigences :
+
+- Faire X
+- Créer Y
 - Etc...
 
-### Epic-2: Second Current PRD Epic (for example front end epic)
+### Épopée-2 : Deuxième épopée PRD actuelle (par exemple, épopée frontend)
 
-### Epic-N: Future Epic Enhancements (Beyond Scope of current PRD)
+### Épopée-N : Améliorations futures des épopées (au-delà de la portée du PRD actuel)
 
-<example>
+<exemple>
 
-## Epic 1: My Cool App Can Retrieve Data
+## Épopée 1 : Mon application peut récupérer des données
 
-#### Story 1: Project and NestJS Set Up
+#### Histoire 1 : Configuration du projet et de NestJS
 
-Requirements:
+Exigences :
 
-- Install NestJS CLI Globally
-- Create a new NestJS project with the nestJS cli generator
-- Test Start App Boilerplate Functionality
-- Init Git Repo and commit initial project set up
+- Installer NestJS CLI globalement
+- Créer un nouveau projet NestJS avec le générateur CLI nestJS
+- Tester les fonctionnalités de démarrage du modèle d'application
+- Initialiser le dépôt Git et valider la configuration initiale du projet
 
-#### Story 2: News Retrieval API Route
+#### Histoire 2 : Route API de récupération des actualités
 
-Requirements:
+Exigences :
 
-- Create API Route that returns a list of News and comments from the news source foo
-- Route post body specifies the number of posts, articles, and comments to return
-- Create a command in package.json that I can use to call the API Route (route configured in env.local)
+- Créer une route API qui renvoie une liste d'actualités et de commentaires depuis la source d'actualités foo
+- Le corps de la requête POST spécifie le nombre de publications, d'articles et de commentaires à renvoyer
+- Créer une commande dans package.json que je peux utiliser pour appeler la route API (route configurée dans env.local)
 
-</example>
+</exemple>
 
-## Technology Stack
+## Pile technologique
 
-{ Table listing choices for languages, libraries, infra, etc...}
+{ Tableau répertoriant les choix de langages, bibliothèques, infrastructure, etc... }
 
-<example>
-  | Technology | Version | Description |
+<exemple>
+  | Technologie | Version | Description |
   | ---------- | ------- | ----------- |
-  | Kubernetes | x.y.z | Container orchestration platform for microservices deployment |
-  | Apache Kafka | x.y.z | Event streaming platform for real-time data ingestion |
-  | TimescaleDB | x.y.z | Time-series database for sensor data storage |
-  | Go | x.y.z | Primary language for data processing services |
-  | GoRilla Mux | x.y.z | REST API Framework |
-  | Python | x.y.z | Used for data analysis and ML services |
-</example>
+  | Kubernetes | x.y.z | Plateforme d'orchestration de conteneurs pour le déploiement de microservices |
+  | Apache Kafka | x.y.z | Plateforme de streaming d'événements pour l'ingestion de données en temps réel |
+  | TimescaleDB | x.y.z | Base de données temporelle pour le stockage des données de capteurs |
+  | Go | x.y.z | Langage principal pour les services de traitement de données |
+  | GoRilla Mux | x.y.z | Framework d'API REST |
+  | Python | x.y.z | Utilisé pour l'analyse de données et les services ML |
+</exemple>
 
-## Project Structure
+## Structure du projet
 
-{ Diagram the folder and file organization structure along with descriptions }
+{ Diagramme de l'organisation des dossiers et fichiers avec descriptions }
 
-<example>
+<exemple>
 
-{ folder tree diagram }
+{ diagramme d'arborescence de dossiers }
 
-</example>
+</exemple>
 
-### POST MVP / PRD Features
+### Fonctionnalités POST MVP / PRD
 
-- Idea 1
-- Idea 2
+- Idée 1
+- Idée 2
 - ...
-- Idea N
+- Idée N
 
-## Change Log
+## Journal des modifications
 
-{ Markdown table of key changes after document is no longer in draft and is updated, table includes the change title, the story id that the change happened during, and a description if the title is not clear enough }
+{ Tableau Markdown des changements clés après que le document n'est plus à l'état de brouillon et est mis à jour, le tableau comprend le titre du changement, l'ID de l'histoire pendant laquelle le changement s'est produit, et une description si le titre n'est pas suffisamment clair }
 
-<example>
-| Change               | Story ID | Description                                                   |
-| -------------------- | -------- | ------------------------------------------------------------- |
-| Initial draft        | N/A      | Initial draft prd                                             |
-| Add ML Pipeline      | story-4  | Integration of machine learning prediction service story      |
-| Kafka Upgrade        | story-6  | Upgraded from Kafka 2.0 to Kafka 3.0 for improved performance |
-</example>
+<exemple>
+| Changement           | ID Histoire | Description                                                      |
+| -------------------- | ----------- | ---------------------------------------------------------------- |
+| Brouillon initial    | N/A         | Brouillon initial du PRD                                         |
+| Ajout Pipeline ML    | histoire-4  | Intégration de l'histoire du service de prédiction par ML        |
+| Mise à jour Kafka    | histoire-6  | Mise à niveau de Kafka 2.0 à Kafka 3.0 pour améliorer les performances |
+</exemple>

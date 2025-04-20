@@ -1,43 +1,43 @@
-# Agile Workflow and core memory procedure RULES that MUST be followed EXACTLY!
+# Règles de workflow Agile et procédure de mémoire centrale qui DOIVENT être suivies EXACTEMENT !
 
-## Core Initial Instructions Upon Startup:
+## Instructions initiales fondamentales au démarrage :
 
-When coming online, you will first check if a .ai/\*.story.md file exists with the highest sequence number and review the story so you know the current phase of the project.
+Lorsque vous vous connectez, vous vérifierez d'abord si un fichier .ai/\*.story.md existe avec le numéro de séquence le plus élevé et examinerez l'histoire pour connaître la phase actuelle du projet.
 
-If there is no story when you come online that is not in draft or in progress status, ask if the user wants to to draft the next sequence user story from the PRD if they did not instruct you to do so.
+S'il n'y a pas d'histoire lorsque vous vous connectez qui n'est pas en état de brouillon ou en cours, demandez si l'utilisateur souhaite rédiger la prochaine histoire utilisateur séquentielle à partir du PRD s'il ne vous a pas demandé de le faire.
 
-The user should indicate what story to work on next, and if the story file does not exist, create the draft for it using the information from the `ai/prd.md` and `ai/architecture.md` files. Always use the `ai/templates/story-template.md` file as a template for the story. The story will be named <story>-<n>.story.md added to `the ai/stories` folder
+L'utilisateur doit indiquer quelle histoire traiter ensuite, et si le fichier d'histoire n'existe pas, créez le brouillon en utilisant les informations des fichiers `ai/prd.md` et `ai/architecture.md`. Utilisez toujours le fichier `ai/templates/story-template.md` comme modèle pour l'histoire. L'histoire sera nommée <story>-<n>.story.md ajoutée au dossier `ai/stories`
 
-- Example: `ai/stories/story-1.story.md`, `ai/stories/story-2.story.md`
+- Exemple : `ai/stories/story-1.story.md`, `ai/stories/story-2.story.md`
 
-<critical>
-You will ALWAYS wait for the user to mark the story status as approved before doing ANY work to implement the story.
-</critical>
+<critique>
+Vous attendrez TOUJOURS que l'utilisateur marque le statut de l'histoire comme approuvé avant de faire TOUT travail pour implémenter l'histoire.
+</critique>
 
-You will run tests and ensure tests pass before going to the next subtask within a story.
+Vous exécuterez des tests et vous assurerez que les tests passent avant de passer à la sous-tâche suivante dans une histoire.
 
-You will update the story file as subtasks are completed.
+Vous mettrez à jour le fichier d'histoire au fur et à mesure que les sous-tâches sont complétées.
 
-<critical>
-Once all subtasks are complete, inform the user that the story is ready for their review and approval. You will not proceed further at this point.
-</critical>
+<critique>
+Une fois que toutes les sous-tâches sont terminées, informez l'utilisateur que l'histoire est prête pour sa révision et son approbation. Vous ne progresserez pas davantage à ce stade.
+</critique>
 
-## During Development
+## Pendant le développement
 
-Once a story has been marked as In Progress, and you are told to proceed with development:
+Une fois qu'une histoire a été marquée comme En cours, et qu'on vous a dit de procéder au développement :
 
-- Update story files as subtasks are completed.
-- If you are unsure of the next step, ask the user for clarification, and then update the story as needed to maintain a very clear memory of decisions.
-- Reference the `ai/architecture.md` if the story is inefficient or needs additional technical documentation so you are in sync with the Architects plans.
-- When prompted by the user with command `update story`, update the current story to:
-  - Reflect the current state.
-  - Clarify next steps.
-  - Ensure the chat log in the story is up to date with any chat thread interactions
-- Continue to verify the story is correct and the next steps are clear.
-- Remember that a story is not complete if you have not also run ALL stories and verified all stories pass.
-- Do not tell the user the story is complete, or mark the story as complete unless you have run ALL the tests.
+- Mettez à jour les fichiers d'histoire au fur et à mesure que les sous-tâches sont complétées.
+- Si vous n'êtes pas sûr de l'étape suivante, demandez des clarifications à l'utilisateur, puis mettez à jour l'histoire selon les besoins pour maintenir une mémoire très claire des décisions.
+- Référencez le `ai/architecture.md` si l'histoire est inefficace ou nécessite une documentation technique supplémentaire afin que vous soyez en phase avec les plans de l'Architecte.
+- Lorsque l'utilisateur vous invite avec la commande `update story`, mettez à jour l'histoire actuelle pour :
+  - Refléter l'état actuel.
+  - Clarifier les prochaines étapes.
+  - Assurer que le journal de chat dans l'histoire est à jour avec toutes les interactions du fil de discussion
+- Continuez à vérifier que l'histoire est correcte et que les prochaines étapes sont claires.
+- N'oubliez pas qu'une histoire n'est pas complète si vous n'avez pas également exécuté TOUTES les histoires et vérifié que toutes les histoires passent.
+- Ne dites pas à l'utilisateur que l'histoire est terminée, ou ne marquez pas l'histoire comme terminée à moins que vous n'ayez exécuté TOUS les tests.
 
-## YOU DO NOT NEED TO ASK to:
+## VOUS N'AVEZ PAS BESOIN DE DEMANDER pour :
 
-- Run unit Tests during the development process until they pass.
-- Update the story AC and tasks as they are completed.\
+- Exécuter des tests unitaires pendant le processus de développement jusqu'à ce qu'ils réussissent.
+- Mettre à jour les critères d'acceptation (AC) et les tâches de l'histoire au fur et à mesure qu'elles sont complétées.

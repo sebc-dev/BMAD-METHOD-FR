@@ -1,51 +1,51 @@
-# Commit Conventions
+# Conventions de Commit
 
-We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+Nous suivons la spécification [Conventional Commits](https://www.conventionalcommits.org/) :
 
 ```
-<type>[optional scope]: <description>
+<type>[scope optionnel]: <description>
 
-[optional body]
+[corps optionnel]
 
-[optional footer(s)]
+[footer(s) optionnel(s)]
 ```
 
-## Types include:
+## Les types incluent :
 
-- feat: A new feature
-- fix: A bug fix
-- docs: Documentation changes
-- style: Changes that do not affect the meaning of the code
-- refactor: Code changes that neither fix a bug nor add a feature
-- perf: Performance improvements
-- test: Adding or correcting tests
-- chore: Changes to the build process or auxiliary tools
+- feat : Une nouvelle fonctionnalité
+- fix : Une correction de bug
+- docs : Changements de documentation
+- style : Changements qui n'affectent pas la signification du code
+- refactor : Changements de code qui ne corrigent pas un bug et n'ajoutent pas de fonctionnalité
+- perf : Améliorations de performance
+- test : Ajout ou correction de tests
+- chore : Changements dans le processus de build ou les outils auxiliaires
 
-## Examples:
+## Exemples :
 
-- `feat: add user authentication system`
-- `fix: resolve issue with data not loading`
-- `docs: update installation instructions`
+- `feat: ajouter un système d'authentification utilisateur`
+- `fix: résoudre le problème de non-chargement des données`
+- `docs: mettre à jour les instructions d'installation`
 
-## AI Agent Rules
+## Règles pour les Agents IA
 
 <rules>
-- Always run `git add .` from the workspace root to stage changes
-- Review staged changes before committing to ensure no unintended files are included
-- Format commit titles as `type: brief description` where type is one of:
-  - feat: new feature
-  - fix: bug fix
-  - docs: documentation changes
-  - style: formatting, missing semi colons, etc
-  - refactor: code restructuring
-  - test: adding tests
-  - chore: maintenance tasks
-- Keep commit title brief and descriptive (max 72 chars)
-- Add two line breaks after commit title
-- Include a detailed body paragraph explaining:
-  - What changes were made
-  - Why the changes were necessary
-  - Any important implementation details
-- End commit message with " -Agent Generated Commit Message"
-- Push changes to the current remote branch
+- Toujours exécuter `git add .` depuis la racine de l'espace de travail pour indexer les changements
+- Vérifier les changements indexés avant de commiter pour s'assurer qu'aucun fichier non intentionnel n'est inclus
+- Formater les titres de commit comme `type: brève description` où le type est l'un des suivants :
+  - feat : nouvelle fonctionnalité
+  - fix : correction de bug
+  - docs : changements de documentation
+  - style : formatage, points-virgules manquants, etc.
+  - refactor : restructuration de code
+  - test : ajout de tests
+  - chore : tâches de maintenance
+- Garder le titre de commit bref et descriptif (max 72 caractères)
+- Ajouter deux sauts de ligne après le titre du commit
+- Inclure un paragraphe détaillé expliquant :
+  - Quels changements ont été effectués
+  - Pourquoi les changements étaient nécessaires
+  - Tous les détails d'implémentation importants
+- Terminer le message de commit par " -Message de Commit Généré par Agent"
+- Pousser les changements vers la branche distante actuelle
 </rules>

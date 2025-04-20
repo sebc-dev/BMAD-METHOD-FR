@@ -1,53 +1,53 @@
-# Story {N}: {Title}
+# Histoire {N} : {Titre}
 
-## Story
+## Histoire
 
-**As a** {role}
-**I want** {action}
-**so that** {benefit}.
+**En tant que** {rôle}
+**je veux** {action}
+**afin de** {bénéfice}.
 
-## Status
+## Statut
 
-Draft OR In-Progress OR Complete
+Brouillon OU En-Cours OU Terminé
 
-## Context
+## Contexte
 
-{A paragraph explaining the background, current state, and why this story is needed. Include any relevant technical context or business drivers.}
+{Un paragraphe expliquant le contexte, l'état actuel et pourquoi cette histoire est nécessaire. Inclure tout contexte technique pertinent ou moteurs commerciaux.}
 
 ## Estimation
 
-Story Points: {Story Points (1 SP=1 day of Human Development, or 10 minutes of AI development)}
+Points d'histoire : {Points d'histoire (1 SP = 1 jour de développement humain, ou 10 minutes de développement IA)}
 
-## Acceptance Criteria
+## Critères d'acceptation
 
-1. - [ ] {First criterion - ordered by logical progression}
-2. - [ ] {Second criterion}
-3. - [ ] {Third criterion}
-         {Use - [x] for completed items}
+1. - [ ] {Premier critère - ordonné par progression logique}
+2. - [ ] {Deuxième critère}
+3. - [ ] {Troisième critère}
+         {Utilisez - [x] pour les éléments terminés}
 
-## Subtasks
+## Sous-tâches
 
-1. - [ ] {Major Task Group 1}
-   1. - [ ] {Subtask}
-   2. - [ ] {Subtask}
-   3. - [ ] {Subtask}
-2. - [ ] {Major Task Group 2}
-   1. - [ ] {Subtask}
-   2. - [ ] {Subtask}
-   3. - [ ] {Subtask}
-            {Use - [x] for completed items, - [-] for skipped/cancelled items}
+1. - [ ] {Groupe de tâches majeur 1}
+   1. - [ ] {Sous-tâche}
+   2. - [ ] {Sous-tâche}
+   3. - [ ] {Sous-tâche}
+2. - [ ] {Groupe de tâches majeur 2}
+   1. - [ ] {Sous-tâche}
+   2. - [ ] {Sous-tâche}
+   3. - [ ] {Sous-tâche}
+            {Utilisez - [x] pour les éléments terminés, - [-] pour les éléments ignorés/annulés}
 
-## Testing Requirements:\*\*
+## Exigences de test :**
 
-    - Reiterate the required code coverage percentage (e.g., >= 85%).
+    - Réitérer le pourcentage de couverture de code requis (par exemple, >= 85%).
 
-## Story Wrap Up (To be filled in AFTER agent execution):\*\*
+## Résumé de l'histoire (À remplir APRÈS l'exécution par l'agent) :**
 
-- **Agent Model Used:** `<Agent Model Name/Version>`
-- **Agent Credit or Cost:** `<Cost/Credits Consumed>`
-- **Date/Time Completed:** `<Timestamp>`
-- **Commit Hash:** `<Git Commit Hash of resulting code>`
-- **Change Log**
-  - change X
-  - change Y
+- **Modèle d'agent utilisé :** `<Nom/Version du modèle d'agent>`
+- **Crédit ou coût de l'agent :** `<Coût/Crédits consommés>`
+- **Date/Heure de fin :** `<Horodatage>`
+- **Hash du commit :** `<Hash du commit Git du code résultant>`
+- **Journal des modifications**
+  - modification X
+  - modification Y
     ...

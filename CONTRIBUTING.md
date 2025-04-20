@@ -1,45 +1,45 @@
-# Contributing to this project
+# Contribuer à ce projet
 
-Thank you for considering contributing to this project! This document outlines the process for contributing and some guidelines to follow.
+Merci d'envisager de contribuer à ce projet ! Ce document décrit le processus de contribution et quelques directives à suivre.
 
-Also note, we use the discussions feature in GitHub to have a community to discuss potential ideas, uses, additions and enhancements.
+Notez également que nous utilisons la fonctionnalité de discussions sur GitHub pour permettre à la communauté de discuter des idées potentielles, des utilisations, des ajouts et des améliorations.
 
-## Code of Conduct
+## Code de conduite
 
-By participating in this project, you agree to abide by our Code of Conduct. Please read it before participating.
+En participant à ce projet, vous acceptez de respecter notre Code de conduite. Veuillez le lire avant de participer.
 
-## How to Contribute
+## Comment contribuer
 
-### Reporting Bugs
+### Signaler des bugs
 
-- Check if the bug has already been reported in the Issues section
-- Include detailed steps to reproduce the bug
-- Include any relevant logs or screenshots
+- Vérifiez si le bug a déjà été signalé dans la section Issues
+- Incluez des étapes détaillées pour reproduire le bug
+- Incluez tous les logs ou captures d'écran pertinents
 
-### Suggesting Features
+### Suggérer des fonctionnalités
 
-- Check if the feature has already been suggested in the Issues section, and consider using the discussions tab in GitHub also. Explain the feature in detail and why it would be valuable.
+- Vérifiez si la fonctionnalité a déjà été suggérée dans la section Issues, et envisagez également d'utiliser l'onglet discussions sur GitHub. Expliquez la fonctionnalité en détail et pourquoi elle serait utile.
 
-### Pull Request Process
+### Processus de Pull Request
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
-3. Make your changes
-4. Run any tests or linting to ensure quality
-5. Commit your changes with clear, descriptive messages following our commit message convention
-6. Push to your branch (`git push origin feature/your-feature-name`)
-7. Open a Pull Request against the main branch
+1. Forkez le dépôt
+2. Créez une nouvelle branche (`git checkout -b feature/nom-de-votre-fonctionnalité`)
+3. Effectuez vos modifications
+4. Exécutez tous les tests ou analyses de code pour assurer la qualité
+5. Commitez vos modifications avec des messages clairs et descriptifs en suivant notre convention de messages de commit
+6. Poussez vers votre branche (`git push origin feature/nom-de-votre-fonctionnalité`)
+7. Ouvrez une Pull Request contre la branche principale
 
-## Commit Message Convention
+## Convention de messages de commit
 
-[Commit Convention](./docs/commit.md)
+[Convention de Commit](./docs/commit.md)
 
-## Code Style
+## Style de code
 
-- Follow the existing code style and conventions
-- Write clear comments for complex logic
-- Ensure all tests pass before submitting
+- Suivez le style de code existant et les conventions
+- Écrivez des commentaires clairs pour les logiques complexes
+- Assurez-vous que tous les tests passent avant de soumettre
 
-## License
+## Licence
 
-By contributing to this project, you agree that your contributions will be licensed under the same license as the project.
+En contribuant à ce projet, vous acceptez que vos contributions soient sous la même licence que le projet.

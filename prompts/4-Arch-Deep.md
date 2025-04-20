@@ -1,57 +1,57 @@
-# Prompt 4: Optional Architect PRD Updates with Deep Research before generating Architecture Document
+# Prompt 4 : Mises à jour facultatives du PRD par l'Architecte avec Recherche Approfondie avant de générer le Document d'Architecture
 
-persona: Architect (performing research to inform PRD and Core Rules)
-model: Gemini 2.5 Pro (or other Deep Research tool)
-mode: Deep Research
+persona : Architecte (effectuant des recherches pour informer le PRD et les Règles Fondamentales)
+modèle : Gemini 2.5 Pro (ou autre outil de Recherche Approfondie)
+mode : Recherche Approfondie
 
-**Note:** Use this _only_ if the main arch prompt indicates that external research is recommended _before_ generating the Architecture Document. Copy this section into a new prompt instance. If you are doing something very niche or out of the ordinary tech stack wise or that there is not a lot of development in github for the models to really give good suggestions, this could be useful. But it is best to stick with well known tech stacks when possible especially if starting with a greenfield and you are not too opinionated.
+**Remarque :** Utilisez ceci _uniquement_ si le prompt principal d'architecture indique que des recherches externes sont recommandées _avant_ de générer le Document d'Architecture. Copiez cette section dans une nouvelle instance de prompt. Si vous faites quelque chose de très spécifique ou hors de l'ordinaire du point de vue de la pile technologique ou qu'il n'y a pas beaucoup de développement sur github pour que les modèles donnent vraiment de bonnes suggestions, cela pourrait être utile. Mais il est préférable de s'en tenir à des piles technologiques bien connues lorsque c'est possible, surtout si vous commencez avec un terrain vierge et que vous n'êtes pas trop dogmatique.
 
-**Find and fill in the specifics for the deep research prompt - it is critical to list the questions of importance you want the research to focus on!**
+**Trouvez et remplissez les spécificités pour le prompt de recherche approfondie - il est essentiel de lister les questions importantes sur lesquelles vous voulez que la recherche se concentre !**
 
-## Why Run This Optional Prompt?
+## Pourquoi exécuter ce prompt facultatif ?
 
-You would typically run this prompt _before_ the main Architecture Document generation prompt **if and only if** the PRD contains requirements or mentions technologies/constraints where crucial information is likely missing or requires external validation. Examples include:
+Vous exécuteriez généralement ce prompt _avant_ le prompt principal de génération du Document d'Architecture **si et seulement si** le PRD contient des exigences ou mentionne des technologies/contraintes où des informations cruciales sont probablement manquantes ou nécessitent une validation externe. Les exemples incluent :
 
-- **Complex Compliance:** Researching implementation best practices for regulations (HIPAA, GDPR, etc.).
-- **Novel Technology:** Investigating stability, community support, or performance of new tech.
-- **Performance Benchmarks:** Comparing external benchmarks for libraries, frameworks, or patterns.
-- **Security Deep Dive:** Researching latest threats, vulnerabilities, or specialized security patterns/tools.
-- **Integration Feasibility:** Investigating external system APIs or integration patterns.
-- **Core AI Rule Investigation:** Researching established best practices, common linting/formatting rules, or effective AI directives for the anticipated technology stack to inform the Core AI Agent Rules definition.
+- **Conformité complexe :** Recherche des meilleures pratiques d'implémentation pour les réglementations (HIPAA, RGPD, etc.).
+- **Technologie nouvelle :** Investigation de la stabilité, du support communautaire ou des performances d'une nouvelle technologie.
+- **Benchmarks de performance :** Comparaison de benchmarks externes pour les bibliothèques, frameworks ou modèles.
+- **Analyse approfondie de sécurité :** Recherche des dernières menaces, vulnérabilités ou modèles/outils de sécurité spécialisés.
+- **Faisabilité d'intégration :** Investigation des API de systèmes externes ou des modèles d'intégration.
+- **Investigation des règles fondamentales de l'IA :** Recherche des meilleures pratiques établies, des règles communes de linting/formatage ou des directives efficaces pour l'IA pour la pile technologique anticipée afin d'informer la définition des règles fondamentales de l'agent IA.
 
-**Do not run this prompt** if the PRD is well-defined and relies on established technologies, patterns, and standards the architect ai can handle or you can guide.
+**N'exécutez pas ce prompt** si le PRD est bien défini et s'appuie sur des technologies, modèles et normes établis que l'IA architecte peut gérer ou que vous pouvez guider.
 
-### Output Format
+### Format de sortie
 
-Generate a structured report summarizing the Deep Research findings. Use headings for each research area. Within each area, provide a concise summary and then clearly list the "Suggested PRD Implications, Clarifications or Modifications". Also add a section as needed of "Specific Architecture Implications" to highlight specifics the architect needs to pay attention to when planning the full architecture.
+Générez un rapport structuré résumant les résultats de la Recherche Approfondie. Utilisez des titres pour chaque domaine de recherche. Dans chaque domaine, fournissez un résumé concis, puis listez clairement les "Implications, clarifications ou modifications suggérées pour le PRD". Ajoutez également une section au besoin des "Implications architecturales spécifiques" pour mettre en évidence les spécificités auxquelles l'architecte doit prêter attention lors de la planification de l'architecture complète.
 
-This deep research can then be fed into the next prompt for the architecture generation. OPTIONALLY - you could combine this with the next prompt - but I have found that keeping deep research and thinking models separate for the focused research and then the architecture generation to be better most times. Experiment to see what works in your scenario.
+Cette recherche approfondie peut ensuite être introduite dans le prochain prompt pour la génération d'architecture. OPTIONNELLEMENT - vous pourriez combiner ceci avec le prochain prompt - mais j'ai trouvé que garder les modèles de recherche approfondie et de réflexion séparés pour la recherche ciblée puis la génération d'architecture est généralement meilleur. Expérimentez pour voir ce qui fonctionne dans votre scénario.
 
-## Prompt Follows:
+## Le prompt suit :
 
-### Role
+### Rôle
 
-You are an expert Software Architect acting as a research assistant. Your task is to use the Deep Research capability to investigate specific external topics relevant to the technical implementation of the project outlined in the provided Product Requirements Document (PRD). The goal is to gather current information, best practices, benchmarks, compliance details, alternative ideas to aid implementation of the MVP, or help determine a path forward for complex unknowns.
+Vous êtes un Architecte Logiciel expert agissant comme assistant de recherche. Votre tâche est d'utiliser la capacité de Recherche Approfondie pour investiguer des sujets externes spécifiques pertinents pour l'implémentation technique du projet décrit dans le Document d'Exigences Produit (PRD) fourni. L'objectif est de recueillir des informations actuelles, des meilleures pratiques, des benchmarks, des détails de conformité, des idées alternatives pour aider à l'implémentation du MVP, ou aider à déterminer une voie à suivre pour des inconnues complexes.
 
-### Context
+### Contexte
 
-The primary input is the finalized Product Requirements Document (PRD):
+L'entrée principale est le Document d'Exigences Produit (PRD) finalisé :
 
-`<Paste the complete finalized PRD content here.>`
+`<Collez ici le contenu complet du PRD finalisé.>`
 
-## Research Target and Output
+## Cible de recherche et sortie
 
-**Specific Areas for Deep Research:**
-Based on the PRD, focus your Deep Research on the following specific questions or areas. Be precise in your queries such as these examples
+**Domaines spécifiques pour la Recherche Approfondie :**
+Sur la base du PRD, concentrez votre Recherche Approfondie sur les questions ou domaines spécifiques suivants. Soyez précis dans vos requêtes comme ces exemples
 
-1.  `<Specify Topic 1, e.g., What are the current best practices and potential pitfalls for implementing HIPAA compliance in a Node.js application using PostgreSQL?>`
-2.  `<Specify Topic 2, e.g., Compare the performance benchmarks and integration complexity of using Library X vs. Library Y for requirement Z mentioned in the PRD?>`
-3.  `<Specify Topic 3, e.g., Investigate emerging technologies or patterns relevant to achieving the scalability NFR described in PRD section A.B?>`
-4.  `<Specify Topic 4, e.g., Research common linting rules (ESLint), formatting standards (Prettier), naming conventions, and AI agent directives for a <Language/Framework, e.g., TypeScript/React> project using <Standard/Pattern, e.g., Airbnb style guide>?>`
-5.  `<What 3rd party API could we utilize to transcode video from format X to Y for free or very cheaply>`
-6.  `<what can I take advantage of to ensure for the MVP we remain under AWS free tier based on all of the requirements in the PRD>`
+1.  `<Spécifiez le sujet 1, par exemple, Quelles sont les meilleures pratiques actuelles et les pièges potentiels pour implémenter la conformité HIPAA dans une application Node.js utilisant PostgreSQL ?>`
+2.  `<Spécifiez le sujet 2, par exemple, Comparez les benchmarks de performance et la complexité d'intégration de l'utilisation de la bibliothèque X par rapport à la bibliothèque Y pour l'exigence Z mentionnée dans le PRD ?>`
+3.  `<Spécifiez le sujet 3, par exemple, Investiguer les technologies ou modèles émergents pertinents pour atteindre le NFR de scalabilité décrit dans la section A.B du PRD ?>`
+4.  `<Spécifiez le sujet 4, par exemple, Recherchez les règles de linting communes (ESLint), les normes de formatage (Prettier), les conventions de nommage et les directives d'agent IA pour un projet <Langage/Framework, par exemple, TypeScript/React> utilisant <Standard/Pattern, par exemple, guide de style Airbnb> ?>`
+5.  `<Quelle API tierce pourrions-nous utiliser pour transcoder de la vidéo du format X au format Y gratuitement ou à très bas coût>`
+6.  `<De quoi puis-je tirer parti pour garantir que pour le MVP, nous restons sous le niveau gratuit d'AWS en fonction de toutes les exigences du PRD>`
 
-7.  **Suggest PRD Implications** For each finding:
-    - Explicitly suggest how it might impact the PRD (recommend specific additions, clarifications, or modifications).
-    - Consider if findings warrant a new "Technical Research Addendum" section or a major rework of the PRD.
-    - Format these suggestions clearly for review by a Technical Product Manager and the Architect.
+7.  **Suggérer des implications pour le PRD** Pour chaque découverte :
+    - Suggérez explicitement comment cela pourrait impacter le PRD (recommander des ajouts, clarifications ou modifications spécifiques).
+    - Considérez si les découvertes justifient une nouvelle section "Addendum de recherche technique" ou une refonte majeure du PRD.
+    - Formatez ces suggestions clairement pour révision par un Chef de Produit Technique et l'Architecte.
